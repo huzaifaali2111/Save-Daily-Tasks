@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgb(222 222 222);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.logo h1 {
+    font-family: "Knewave", system-ui;
+    color: rgb(151, 66, 231);
+    text-align: center;
+    font-size: 36px;
+    transition: all 1s ease;
+}
+
+.logo h1:hover {
+    transform: scale(1.02);
+}
+
+.container {
+    background-color: rgb(133 34 232 / 17%);
+    padding: 20px;
+    padding-bottom: 2px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 700px;
+    border-radius: 10px 10px 0px 0px;
+    
+
+}
+
+.container h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0px 0px 20px 0px;
+    color: black;
+    text-shadow: 1px 0px 4px white;
+
+}
+
+
+.btn_style {
+    padding: 6px 10px;
+    border: 1px solid rgb(151, 66, 231);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.btn_style:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(151, 66, 231);
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.btn_style.active {
+    background-color: rgb(151, 66, 231);
+    color: white;
+    transform: scale(1.02);
+}
+
+.text_box {
+    display: flex;
+    gap: 2px;
+}
+
+.save_style {
+    border-radius: 0px 50px 50px 0px;
+    padding: 10px;
+    border: 1px solid rgb(151, 66, 231);
+    background-color: rgb(151, 66, 231);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    color: white;
+    transition: all 1s ease;
+}
+
+.save_style:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    transform: scale(1.1);
+
+}
+
+.text_box input {
+    width: 350px;
+    height: 50px;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid rgb(151, 66, 231);
+    padding: 10px;
+    transition: all 1s cubic-bezier(1, 0.08, 0.06, 0.85);
+    
+}
+
+.text_box input:focus {
+    outline: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+
+}
+
+.filter_btn {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.task_keeper {
+    background-color: white;
+    min-height: 200px;
+    padding: 20px;
+    margin: auto;
+    max-width: 700px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.dynamic_content {
+    background-color: rgb(133 34 232 / 17%);
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    margin: 4px;
+    cursor: pointer;
+    gap: 4px;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trash {
+    color: rgb(151, 66, 231);
+    margin-left: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.dynamic_content {
+    transition: all 1s ease;
+}
+
+.dynamic_content:hover {
+    transform: scale(1.02);
+}
